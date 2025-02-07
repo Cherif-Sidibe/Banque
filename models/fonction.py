@@ -45,18 +45,19 @@ def afficherclient(users):
         print("Prenom :",i.prenom)
         print("Email :",i.email)
         print("Password :",i.pwd,"\n")
-        
 
-def sauvegarderclients(users):
-    data = {"clients": []}
-    for user in users:
-        data["clients"].append({
-            "nom": user.nom,
-            "prenom": user.prenom,
-            "email": user.email,
-            "password": user.pwd,
-            "solde": user.solde
-        })
+def sauvegarderclient(user):
+    data = chargerclients()  
+    clients = data["clients"]
+    
+    for i in range(len(clients)):
+        if clients[i]["email"] == user.email:
+            clients[i]["nom"] = user.nom
+            clients[i]["prenom"] = user.prenom
+            clients[i]["email"] = user.email
+            clients[i]["password"] = user.pwd
+            clients[i]["solde"] = user.solde
+            break
     with open(BD, "w") as f:
         json.dump(data, f, indent=4)
 

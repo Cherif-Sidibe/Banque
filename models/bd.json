@@ -5,7 +5,7 @@
             "prenom": "John",
             "email": "john.doe@example.com",
             "password": "admin",
-            "solde": 1500.0
+            "solde": 1600.0
         },
         {
             "nom": "Smith",
@@ -19,7 +19,7 @@
             "prenom": "Cherif",
             "email": "cherif.sidibe@example.com",
             "password": "admin",
-            "solde": 500.0
+            "solde": 1e+20
         }
     ]
 }
