@@ -1,0 +1,25 @@
+{
+    "clients": [
+        {
+            "nom": "Doe",
+            "prenom": "John",
+            "email": "john.doe@example.com",
+            "password": "admin",
+            "solde": 1500.0
+        },
+        {
+            "nom": "Smith",
+            "prenom": "Jane",
+            "email": "jane.smith@example.com",
+            "password": "admin",
+            "solde": 2300.5
+        },
+        {
+            "nom": "Sidibe",
+            "prenom": "Cherif",
+            "email": "cherif.sidibe@example.com",
+            "password": "admin",
+            "solde": 500.0
+        }
+    ]
+}
