@@ -16,10 +16,10 @@ def saisir_email():
             print("Email invalide. Essayez encore.")
 
 def depot():
-    users=getclients()
-    user_active=None
+    users = getclients()
+    user_active = None
     while user_active == None:
-        mail=saisir_email()
+        mail = saisir_email()
         user_active=getclientsbymail(users,mail)
     montant=0
     while montant<1:

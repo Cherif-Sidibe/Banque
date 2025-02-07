@@ -1,8 +1,9 @@
 from views.fonction import *
+import os
 
 while True:
     affichermenu()
-    choix=int(input("Entrer votre choix : "))
+    choix = int(input("Entrer votre choix : "))
     if choix == 1 :
         depot()
     elif choix == 2 :
