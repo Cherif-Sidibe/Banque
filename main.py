@@ -1,5 +1,4 @@
 from views.fonction import *
-import os
 
 while True:
     affichermenu()
